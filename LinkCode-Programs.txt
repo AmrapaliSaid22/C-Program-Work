@@ -1,0 +1,104 @@
+prog no 1 welcome card 
+
+
+#include <stdio.h>
+int main()
+{
+printf("\n | \t ------------Welcome to Siddhivinayak--------------\t|");
+printf("\n | \t Name\t\t: Rutvik Ghodekar\t|");
+printf("\n | \tCompany\t\t: Shri Siddhivinayak Enterprises\t|");
+printf("\n | \tMobNo\t\t: 9146010110\t|");
+printf("\n |-----------------------THANK YOU-------------------------|");
+            return 0;
+}
+
+
+
+
+prog no 2   Addition of two numbers
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int a,b,add;
+	
+	printf("Enter any 2 numbers :");
+	scanf("%d%d",&a,&b);
+	add=a+b;
+	printf("Addition of a and b is :%d",add);
+	
+	return 0;
+
+}
+
+
+
+Prog no 3  Area of circle
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	
+	float r,ca;
+	printf("Enter radius for circle....");
+	scanf("%f",&r);  //3.3
+	ca = 3.14*r*r;
+	printf("Area of circleis : %.2f",ca);
+	
+	return 0;
+}
+prog no 4 Area of triangle
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	float b,h,ta;
+	printf("Enter base and height");
+	scanf("%f%f" &b,&h); //3.3
+	ta= 0.5*b*h;
+	printf("Area of triangleis : %.2f"ta);
+	
+	return 0;
+}
+
+
+
+prog no 5  Student Marksheet
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	int rno;
+	char sname[10];
+	int sub1,sub2,sub3,total;
+	float perct;
+	
+	printf("Enter Roll No ");
+	scanf("%d",&rno);
+	
+	printf("Enter Student Name ");
+	scanf("%s",sname); //no need & sign in S ( String )
+	
+	printf("Enter Marks for three subject..");
+	scanf("%d%d%d"&sub1,sub2,&sub3);
+	
+	// calculate total 
+	
+	total =sub1+sub2+sub3;
+	perct = total/3;
+	
+	printf("\n....................Marksheet.....................");
+	printf("\n\t\\tRollno\tName\tMath\tElect\tComp\tTotal\tperct");
+    printf("\n..................................................");
+    printf("\n%d\t%s\t%d\t%d\t%d\t$d\t%.2f",rno,sname,sub1,sub2,sub3,total,perct);
+    printf("\n...................Thank You......................");
+    
+    
+	return 0;
+}
